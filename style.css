@@ -215,14 +215,50 @@ footer {
     font-size: 1em;
 }
 
-footer p{
+footer p {
     font-size: 30px;
 }
 
-.slogan{
+.slogan {
     font-size: 25px;
 }
 
-.copyright{
+.copyright {
     font-size: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    .services .service, .testimonials .testimonial {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .services .service, .testimonials .testimonial {
+        width: 100%;
+    }
 }
